@@ -19,7 +19,7 @@ pipeline {
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
         }
-        stage('Test'){
+        stage('Deploy'){
             steps {
                 input 'Aprova o deploy do projeto?'
                 echo 'Depolying...'
